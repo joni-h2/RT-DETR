@@ -28,7 +28,7 @@ def main(args, ) -> None:
     print('cfg: ', cfg.__dict__)
 
     solver = TASKS[cfg.yaml_cfg['task']](cfg)
-    
+    import ipdb; ipdb.set_trace()
     if args.test_only:
         solver.val()
     else:
